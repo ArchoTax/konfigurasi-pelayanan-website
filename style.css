@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  align-items: center;
+}
+
+.align {
+  padding: 1.4rem 7%;
+}
+
+/* Header */
+.header h5 {
+  font-weight: 500;
+  color: rgb(165, 165, 165);
+  margin-bottom: 1rem;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #212121;
+}
+
+.header h3 {
+  font-weight: 400;
+  color: rgb(105, 105, 105);
+  margin-top: 2.2rem;
+  line-height: 2rem;
+}
+
+.credit-tanggal {
+  display: flex;
+  margin-top: 2.1rem;
+  gap: 5px;
+}
+
+.credit-tanggal p {
+  font-weight: 700;
+  color: rgb(105, 105, 105);
+  font-size: 0.8rem;
+  margin-right: 0.7rem;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: rgb(105, 105, 105);
+  font-size: 1.2rem;
+}
+
+.img-head {
+  width: 100%;
+  position: relative;
+  margin-top: 2.4rem;
+}
+
+/* Hero Section */
+.hero {
+  color: #212121;
+}
+
+.content {
+  margin-top: 1.9rem;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 2rem;
+  color: #212121;
+}
+
+.content span {
+  font-weight: 800;
+  color: #e91e63;
+}
+
+.content-2 {
+  margin-top: 3.5rem;
+  font-size: 1.8rem;
+  color: #212121;
+}
+
+.judul {
+  font-weight: 800;
+}
+
+.content-2 p {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+.content-3 {
+  margin-top: 3.5rem;
+  font-size: 1.8rem;
+  color: #212121;
+}
+
+.judul-2 {
+  font-weight: 800;
+}
+
+.content-3 p {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+.footer {
+  color: #fafafa;
+  background-color: #212121;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 5rem;
+}
+
+/* Media Queries */
+
+/* Laptop */
+
+/* Tablet */
+@media (max-width: 800px) {
+  html {
+    font-size: 150%;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 428px) {
+  html {
+    font-size: 80%;
+  }
+
+  .content {
+    font-size: 1.2rem;
+  }
+
+  .content-2 p {
+    font-size: 1.2rem;
+  }
+
+  .content-3 p {
+    font-size: 1.2rem;
+  }
+}
