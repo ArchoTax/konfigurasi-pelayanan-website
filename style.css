@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap");
 
 * {
+  -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -16,6 +17,34 @@ html {
 
 body {
   align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #212121;
+}
+
+.logo img {
+  width: 9rem;
+  position: relative;
+}
+
+.navbar .navbar-nav a {
+  color: #fafafa;
+}
+
+.navbar .navbar-nav {
+  transition: 0.8s ease-in-out;
+}
+
+.navbar .navbar-nav :hover {
+  color: #fafafa;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .align {
@@ -121,12 +150,53 @@ body {
   line-height: 2rem;
 }
 
+/* Footer */
 .footer {
-  color: #fafafa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  margin-top: 3rem;
+  padding-top: 2rem;
   background-color: #212121;
-  text-align: center;
-  padding: 2rem 0;
-  margin-top: 5rem;
+}
+
+.footer .footer-foot h2 {
+  font-weight: 400;
+  color: #fafafa;
+  font-size: 0.9rem;
+}
+
+.logo2 img {
+  width: 30%;
+}
+
+.ig {
+  color: #fafafa;
+  margin-left: -2rem;
+}
+
+.dribbble {
+  color: #fafafa;
+  margin-left: 2rem;
+  transition: 0.3s linear;
+}
+
+.dribbble :hover {
+  color: #e74d89;
+  cursor: pointer;
+}
+
+.behance {
+  color: #fafafa;
+  margin-left: 2rem;
+  transition: 0.3s linear;
+}
+
+.behance :hover {
+  color: #1869ff;
+  cursor: pointer;
 }
 
 /* Media Queries */
@@ -137,6 +207,17 @@ body {
 @media (max-width: 800px) {
   html {
     font-size: 150%;
+  }
+
+  /* Footer */
+  .footer img {
+    width: 50%;
+  }
+
+  .links {
+    padding: 1.4rem 7%;
+    padding-top: 3rem;
+    font-size: 1rem;
   }
 }
 
@@ -155,6 +236,17 @@ body {
   }
 
   .content-3 p {
+    font-size: 1.2rem;
+  }
+
+  /* Footer */
+  .footer img {
+    width: 60%;
+  }
+
+  .links {
+    padding: 1.4rem 7%;
+    padding-top: 3rem;
     font-size: 1.2rem;
   }
 }
